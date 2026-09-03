@@ -11,7 +11,15 @@
     "mobile": "npm --prefix mobile run start -- -c",
     "mobile:clear": "npm --prefix mobile run start:clear",
     "mobile:android": "npm --prefix mobile run android",
-    "mobile:ios": "npm --prefix mobile run ios"
+    "mobile:ios": "npm --prefix mobile run ios",
+    "test": "node tests/runners/run-all-tests.js",
+    "test:all": "node tests/runners/run-all-tests.js",
+    "test:selenium": "node tests/selenium-web/run-selenium.js",
+    "test:appium": "node tests/appium-android/run-appium.js",
+    "test:unit": "node tests/unit-api/run-unit-tests.js",
+    "test:validation": "node tests/validation/run-validation.js",
+    "test:deployment": "node tests/deployment/run-deployment.js",
+    "test:load": "node tests/load-performance/run-load-tests.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -29,6 +37,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
     "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
     "oxlint": "^1.75.0",
     "vite": "^8.2.0"
   }
