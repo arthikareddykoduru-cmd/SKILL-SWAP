@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Skill Swap",
+    "slug": "skill-swap",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0B0F19"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Skill Swap needs access to your camera for video exchange sessions.",
+        "NSMicrophoneUsageDescription": "Skill Swap needs access to your microphone for audio calls."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0F19"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "AUDIO_SETTINGS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Skill Swap to access your camera for video calls.",
+          "microphonePermission": "Allow Skill Swap to access your microphone for audio calls."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
